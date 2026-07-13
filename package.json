@@ -1,0 +1,17 @@
+{
+  "name": "qyvenox",
+  "version": "1.0.0",
+  "description": "QYVENOX - AI-Powered All-in-One Platform",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "build": "npm run build --prefix client && npm run build --prefix server",
+    "start": "npm start --prefix server",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
